@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_align="@+id/tvDCA"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:src="@drawable/ic_baseline_directions_car_24" />
+
+    <ImageView
+        android:id="@+id/bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:layout_toRightOf="@id/ivcar"
+        android:src="@drawable/ic_baseline_directions_bike_24" />
+
+    <ImageView
+        android:id="@+id/ivbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:layout_toRightOf="@id/bike"
+        android:src="@drawable/ic_baseline_directions_bus_24"/>
+
+
+    <TextView
+        android:id="@+id/tvDCA"
+        android:layout_width="@dimen/text_200dp"
+        android:layout_height="@dimen/width_400dp"
+        android:layout_below="@id/ivcar"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="@dimen/margin_100dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="@dimen/margin_100dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/DCA"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/ivarrow"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/bike"
+        android:layout_marginStart="@dimen/margin_140dp"
+        android:layout_marginLeft="@dimen/margin_140dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="@dimen/arrow_150"
+        android:layout_marginRight="@dimen/right_70"
+        android:layout_marginBottom="@dimen/arrow_150"
+        android:background="@color/purple_200"
+        android:src="@drawable/ic_baseline_compare_arrows_24" />
+
+    <TextView
+        android:id="@+id/tvMARS"
+        android:layout_width="@dimen/text_200dp"
+        android:layout_height="@dimen/width_400dp"
+        android:layout_below="@id/ivbus"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="@dimen/margin_100dp"
+        android:layout_toRightOf="@id/tvDCA"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/MARS"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDCA"
+        android:id="@+id/tvOneway"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:background="@color/orange"
+        android:paddingRight="@dimen/switch_20dp"
+        android:text="@string/oneway"
+        android:textSize="@dimen/oneway_50sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="124dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tvMARS"
+        android:layout_marginStart="@dimen/margin_250dp"
+        android:layout_marginTop="28dp"
+        android:text="Switch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOneway"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/traveller"
+        android:textSize="@dimen/oneway_50sp"
+        android:background="@color/orange"></TextView>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DataPassingwithIntent</string>
+    <string name="DCA">DCA</string>
+    <string name="MARS">MARS</string>
+    <string name="oneway">ONE WAY</string>
+    <string name="traveller">1 Traveller</string>
+</resources>
